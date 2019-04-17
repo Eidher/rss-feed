@@ -48,13 +48,14 @@
   "jest": {
     "collectCoverageFrom": [
       "src/**/*.{js,jsx,ts,tsx}",
-      "!<rootDir>/node_modules/",
-      "!<rootDir>/public/",
+      "!<rootDir>/node_modules/**",
+      "!<rootDir>/public/**",
       "!<rootDir>/src/setupTests.js",
       "!<rootDir>/src/serviceWorker.js",
       "!<rootDir>/src/index.js",
       "!<rootDir>/src/store/index.js",
-      "!<rootDir>/src/store/reducers/index.js"
+      "!<rootDir>/src/store/reducers/index.js",
+      "!<rootDir>/src/components/feed/containers/**"
     ],
     "coverageThreshold": {
       "global": {

@@ -3,9 +3,6 @@ import dispatchers from "./dispatchers";
 
 let page = 1;
 const size = 6;
-const httpClient = http({
-  baseURL: "api/"
-});
 
 export const updateLinkList = feed => dispatch => {
   const { updateLinks } = dispatchers(dispatch);
@@ -47,7 +44,11 @@ export const getFeeds = () => dispatch => {
   const from = size * page - size;
   page++;
 
-  httpClient
+  const httpClient = http({
+    baseURL: "api/"
+  });
+
+  return httpClient
     .get("/feeds", {
       params: {
         from,
@@ -58,7 +59,7 @@ export const getFeeds = () => dispatch => {
       const { data: feeds } = response;
       const hasMore = feeds.length === size;
 
-      // Assigning flag isError equal false to the feed by default
+      // Assigning flag isError equal false to the feed by default,
       // this flag will be updated if there's an error fetching the feed links
       const mappedFeeds = feeds.map(feed => ({
         ...feed,
@@ -83,6 +84,10 @@ export const getFeeds = () => dispatch => {
 };
 
 const saveFeed = feed => {
+  const httpClient = http({
+    baseURL: "api/"
+  });
+
   return httpClient
     .post("/feeds", {
       data: feed

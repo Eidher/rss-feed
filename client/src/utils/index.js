@@ -12,10 +12,6 @@ export const isUrlValid = url => {
   }
 };
 
-export const shortTitle = title => {
-  return title.substring(0, 35) + "...";
-};
-
 const parser = new Parser();
 const CORS_PROXY = "https://cors-anywhere.herokuapp.com/";
 
