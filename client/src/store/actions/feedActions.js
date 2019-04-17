@@ -4,7 +4,7 @@ import dispatchers from "./dispatchers";
 let page = 1;
 const size = 6;
 const httpClient = http({
-  baseURL: process.env.REACT_APP_BASE_API_URL
+  baseURL: "api/"
 });
 
 export const updateLinkList = feed => dispatch => {

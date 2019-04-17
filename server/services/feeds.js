@@ -18,7 +18,7 @@ const getAll = async (from, size) => {
       .lean()
       .exec();
 
-    await pause(1000);
+    // await pause(1000);
 
     return feeds.map(feed => {
       const mappedFeed = { ...feed };

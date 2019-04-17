@@ -23,7 +23,7 @@ const app = express();
 app.use(logger("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: "false" }));
-app.use(express.static(path.join(process.cwd(), "dist")));
+app.use(express.static(path.join(process.cwd(), "build")));
 
 app.use((req, res, next) => {
   res.header("Access-Control-Allow-Origin", "*");
@@ -39,8 +39,8 @@ app.use("/api/feeds", routes.feeds);
 // Catch 404 and forward to error handler
 app.use((req, res, next) => {
   const err = new Error("Not Found");
-  err.status = 404;
-  next(err);
+  res.status(404);
+  res.json({ err: err.message });
 });
 
 // Error handler

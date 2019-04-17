@@ -1,13 +1,17 @@
 {
   "name": "rss-reader-univision",
+  "author": "Eidher Escalona <eidher.escalona@gmail.com>",
+  "license": "MIT",
   "version": "0.1.0",
   "description": "Web Dev Assessment",
   "main": "index.js",
   "scripts": {
-    "start": "docker-compose up -d",
+    "start": "cd docker && docker-compose up -d --build",
     "client:install": "npm i --prefix client",
     "client:build": "npm run build --prefix client",
-    "server:test": "npm start --prefix server"
+    "server:install": "npm i --prefix server",
+    "server:start": "npm start --prefix server",
+    "test": "npm run test:coverage --prefix client"
   },
   "repository": {
     "type": "git",
@@ -19,8 +23,6 @@
     "assessment",
     "web"
   ],
-  "author": "Eidher Escalona <eidher.escalona@gmail.com>",
-  "license": "MIT",
   "bugs": {
     "url": "https://github.com/Eidher/rss-reader/issues"
   },

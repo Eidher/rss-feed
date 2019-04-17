@@ -6,18 +6,19 @@ LABEL maintainer="Eidher Escalona <eidher.escalona@gmail.com>"
 WORKDIR /usr/src/app
 
 # Copy folders
-COPY ./server .
-COPY ./client .
+COPY ./client client/
+COPY ./server server/
 
 # Install app dependencies
 COPY package.json .
 
 # Running client commands
-RUN npm run client:Instal \\ 
-    &&  npm run client:build
+RUN npm run client:install \\
+    && npm run client:build
 
-RUN cp ./client/build /server/build
+RUN cp -r client/build server/build
+
+# Installing server dependencies
+RUN npm run server:install
 
 EXPOSE 2525
-
-CMD [ "npm", "run" "server:start" ]
