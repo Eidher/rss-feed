@@ -2,7 +2,7 @@
 
 ## Pre requirements
 
-You need to have `Docker Compose` installed in your machine. [Install Docker Compose](https://docs.docker.com/compose/install/). You also going to need [Node](https://nodejs.org/en/download/) and [NPM](https://www.npmjs.com/get-npm) installed.
+You need to have [Docker Compose](https://docs.docker.com/compose/install/) installed in your machine. You also going to need [Node](https://nodejs.org/en/download/) and [NPM](https://www.npmjs.com/get-npm) installed.
 
 ## Project Scaffolding
 
