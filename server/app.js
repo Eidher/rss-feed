@@ -28,11 +28,7 @@ app.use(express.static(path.join(process.cwd(), "build")));
 app.use("/api/feeds", routes.feeds);
 
 app.get("/*", (req, res) => {
-  res.sendFile(path.join(process.cwd(), "build/index.html"), err => {
-    if (err) {
-      res.status(500).send(err);
-    }
-  });
+  res.sendFile(path.join(process.cwd(), "build/index.html"));
 });
 
 // Catch 404 and forward to error handler

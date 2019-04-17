@@ -19,16 +19,16 @@ describe("<Header />", () => {
     wrapper.find("Link").forEach((node, index) => {
       expect(node).toHaveProp("to");
 
-      if (index === 1 || index === 2) {
+      if (index === 0 || index === 1) {
         expect(node.prop("to")).toBe("/");
       }
 
       if (index === 2) {
-        expect(node.prop("path")).toBe("/feed");
+        expect(node.prop("to")).toBe("/feed");
       }
 
       if (index === 3) {
-        expect(node.prop("path")).toBe("/contact");
+        expect(node.prop("to")).toBe("/contact");
       }
     });
   });

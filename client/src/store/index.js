@@ -3,14 +3,14 @@ import ReduxThunk from "redux-thunk";
 import reducers from "./reducers";
 
 // Using redux thunk for async actions
-const middlewares = [ReduxThunk];
+const middleWares = [ReduxThunk];
 
 // Creating the redux store
 const store = createStore(
   reducers,
   {},
   compose(
-    applyMiddleware(...middlewares)
+    applyMiddleware(...middleWares)
     // window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
   )
 );

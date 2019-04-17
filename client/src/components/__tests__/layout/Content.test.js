@@ -13,10 +13,11 @@ describe("<Content />", () => {
     expect(wrapper).toContainMatchingElements(4, "Route");
   });
 
-  it("should have the right Routes and paths", () => {
+  it("should have the right Routes paths", () => {
     wrapper.find("Route").forEach((node, index) => {
       if (index === 0) {
         expect(node).toHaveProp("component");
+        expect(node.prop("component")).toBeInstanceOf(Function);
       } else {
         expect(node).toHaveProp("path");
       }
@@ -37,5 +38,9 @@ describe("<Content />", () => {
 
   it("should be of type main element", () => {
     expect(wrapper.type()).toBe("main");
+  });
+
+  it("should have a div with class name container", () => {
+    expect(wrapper.find("div")).toHaveClassName("container");
   });
 });

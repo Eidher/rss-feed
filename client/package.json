@@ -50,16 +50,18 @@
       "src/**/*.{js,jsx,ts,tsx}",
       "!<rootDir>/node_modules/",
       "!<rootDir>/public/",
-      "!src/setupTests.js",
-      "!src/serviceWorker.js",
-      "!src/index.js"
+      "!<rootDir>/src/setupTests.js",
+      "!<rootDir>/src/serviceWorker.js",
+      "!<rootDir>/src/index.js",
+      "!<rootDir>/src/store/index.js",
+      "!<rootDir>/src/store/reducers/index.js"
     ],
     "coverageThreshold": {
       "global": {
-        "branches": 90,
-        "functions": 90,
-        "lines": 90,
-        "statements": 90
+        "branches": 60,
+        "functions": 60,
+        "lines": 60,
+        "statements": 60
       }
     },
     "coverageReporters": [
