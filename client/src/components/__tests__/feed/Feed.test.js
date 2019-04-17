@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import Feed from "../../feed/Feed";
 
-describe("<Home />", () => {
+describe("<Feed />", () => {
   const wrapper = shallow(<Feed />);
 
   it("should have the right elements", () => {

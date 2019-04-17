@@ -1,9 +1,8 @@
 import React from "react";
 import { shallow } from "enzyme";
 import FeedForm from "../../feed/FeedForm";
-import { wrap } from "module";
 
-describe("<Home />", () => {
+describe("<FeedForm />", () => {
   const props = {
     addFeed: jest.fn(),
     cleanFormError: jest.fn(),

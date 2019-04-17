@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import image from "../../assets/images/demo-screen-1.jpg";
+import image from "../../assets/images/home1.jpg";
 import HomeText from "./HomeText";
 import HomeImage from "./HomeImage";
 
@@ -10,8 +10,8 @@ class Home extends Component {
 
   render() {
     const mainText =
-      "New Age is an app landing page that will help you beautifull " +
-      "showcase your new mobile app, or anything else!";
+      "Hello! My name is Eidher Escalona and this is my proposal for the " +
+      "Web Assessment. Thank you!";
     const buttonText = "Go to RSS Feed!";
 
     return (

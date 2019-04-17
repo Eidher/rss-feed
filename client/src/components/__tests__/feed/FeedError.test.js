@@ -2,7 +2,7 @@ import React from "react";
 import { shallow } from "enzyme";
 import FeedError from "../../feed/FeedError";
 
-describe("<Home />", () => {
+describe("<FeedError />", () => {
   const props = { message: "an error message" };
   const wrapper = shallow(<FeedError {...props} />);
 
