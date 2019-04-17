@@ -1,0 +1,32 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeImage /> renders correctly. 1`] = `
+<div
+  className="col-lg-5 my-auto"
+>
+  <div
+    className="device-container"
+  >
+    <div
+      className="device-mockup iphone6_plus portrait white"
+    >
+      <div
+        className="device"
+      >
+        <div
+          className="screen"
+        >
+          <img
+            alt="Principal"
+            className="img-fluid"
+            src="path-to-image"
+          />
+        </div>
+        <div
+          className="button"
+        />
+      </div>
+    </div>
+  </div>
+</div>
+`;

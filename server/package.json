@@ -1,0 +1,38 @@
+{
+  "name": "rss-reader-server",
+  "version": "0.1.0",
+  "description": "Web Dev Assessment Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eidher/rss-reader.git"
+  },
+  "keywords": [
+    "web",
+    "dev",
+    "assessment",
+    "sever"
+  ],
+  "author": "Eidher Escalona <eidher.escalona@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Eidher/rss-reader/issues"
+  },
+  "homepage": "https://github.com/Eidher/rss-reader#readme",
+  "devDependencies": {
+    "eslint": "^5.3.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.16.0"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.5.1",
+    "morgan": "^1.9.1"
+  }
+}

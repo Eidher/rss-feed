@@ -1,0 +1,21 @@
+{
+    "extends": "airbnb-base",
+    "parserOptions": {
+      "sourceType": "script"
+    },
+    "rules": {
+      "quotes": "off",
+      "strict": [
+        "error",
+        "global"
+      ],
+      "comma-dangle": "off",
+      "arrow-parens": "off",
+      "no-restricted-globals": [
+        "error",
+        "event",
+        "fdescribe"
+      ],
+      "no-underscore-dangle": "off"
+    }
+}

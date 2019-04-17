@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<HomeText /> renders correctly. 1`] = `
+<div
+  className="col-lg-7 my-auto"
+>
+  <div
+    className="header-content mx-auto"
+  >
+    <h1
+      className="mb-5"
+    >
+      main text
+    </h1>
+    <a
+      className="btn btn-outline btn-xl js-scroll-trigger"
+      href="#download"
+    >
+      button text samole
+    </a>
+  </div>
+</div>
+`;

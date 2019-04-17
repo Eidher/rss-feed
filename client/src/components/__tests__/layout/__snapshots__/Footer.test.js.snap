@@ -1,0 +1,46 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Footer /> renders correctly. 1`] = `
+<footer>
+  <div
+    className="container"
+  >
+    <p>
+      © RSS Feed - Eidher Escalona - 
+      2019
+      . All Rights Reserved.
+    </p>
+    <ul
+      className="list-inline"
+    >
+      <li
+        className="list-inline-item"
+      >
+        <a
+          href="#"
+        >
+          Home
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          href="#"
+        >
+          RSS Feed
+        </a>
+      </li>
+      <li
+        className="list-inline-item"
+      >
+        <a
+          href="#"
+        >
+          Contact
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+`;

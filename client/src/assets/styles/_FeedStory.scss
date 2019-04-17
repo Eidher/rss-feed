@@ -1,0 +1,107 @@
+main {
+  section#feed {
+    .feed-story {
+      width: 100%;
+      margin: 10px 0px 20px 0px;
+
+      .feed-story-header {
+        @include primary-font;
+        text-transform: uppercase;
+        color: $theme-tertiary;
+        border-bottom: 0;
+        font-size: 14px;
+        text-align: center;
+        background-color: #ffffff;
+
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        &.card-subtitle {
+          text-transform: none;
+          margin-bottom: 10px;
+          color: lighten($gray-light, 20%);
+          padding: 0 25px;
+        }
+      }
+
+      .feed-story-item {
+        color: $gray-light;
+        font-size: 14px;
+        padding: 0.55rem 1.95rem;
+        background-color: $gray-lighter;
+
+        &:hover {
+          @include transition-all();
+          background-color: #ffffff;
+        }
+
+        &.loader {
+          height: 237px;
+          > img {
+            content: url(../images/loading2.gif);
+            margin-top: 70px;
+            margin-left: 90px;
+            margin-bottom: 20px;
+          }
+
+          .text {
+            @include primary-font;
+            text-align: center;
+            text-transform: uppercase;
+            color: lighten($gray-light, 20%);
+          }
+        }
+
+        &.error {
+          height: 237px;
+          .text {
+            @include primary-font;
+            margin-top: 70px;
+            margin-left: 30px;
+            color: red;
+
+            img {
+              width: 40px;
+            }
+          }
+        }
+
+        .title {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          cursor: pointer;
+        }
+      }
+
+      .feed-story-footer {
+        color: #007bff;
+        @include transition-all;
+        &:hover,
+        &:focus {
+          color: darken(#007bff, 10%);
+        }
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 10px 20px;
+        text-align: right;
+        font-size: 14px;
+      }
+
+      @include media-breakpoint-up(md) {
+        width: 18em;
+        margin: 10px 5px 50px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        width: 17em;
+      }
+
+      @include media-breakpoint-up(xl) {
+        width: 20em;
+      }
+    }
+  }
+}

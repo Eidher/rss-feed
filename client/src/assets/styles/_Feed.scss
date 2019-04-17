@@ -1,0 +1,14 @@
+@import "FeedForm";
+@import "FeedList";
+@import "FeedStory";
+
+main {
+  section#feed {
+    padding: 0;
+    // border: 1px solid white;
+
+    @include media-breakpoint-up(lg) {
+      padding: 45px 0;
+    }
+  }
+}

@@ -1,0 +1,54 @@
+main {
+  section#feed {
+    .feed-form {
+      padding-top: 0;
+      padding-bottom: 45px;
+
+      .title {
+        text-align: center;
+        font-size: 20px;
+        text-transform: uppercase;
+        padding-bottom: 8px;
+        @include heading-font;
+      }
+
+      .is-invalid {
+        border-width: 2px;
+        border-color: red;
+        background-color: #fde5e5;
+      }
+
+      .invalid-feedbac {
+        text-align: center;
+      }
+
+      .btn {
+        margin-top: 20px;
+      }
+
+      @include media-breakpoint-up(lg) {
+        padding-top: 40px;
+
+        .title {
+          text-align: right;
+          padding-bottom: 0;
+          padding-top: 5px;
+        }
+
+        .invalid-feedbac {
+          text-align: left;
+        }
+
+        .input,
+        .title,
+        .button {
+          height: 50px;
+        }
+
+        .btn {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+}

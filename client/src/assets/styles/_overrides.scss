@@ -1,0 +1,43 @@
+.bg-primary {
+  background: $theme-primary;
+  background: linear-gradient($theme-primary, darken($theme-primary, 5%));
+}
+
+.text-primary {
+  color: $theme-primary;
+}
+
+.no-gutter > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.btn-outline {
+  color: white;
+  border: 1px solid;
+  border-color: white;
+  &:hover,
+  &:focus,
+  &:active,
+  &.active {
+    color: white;
+    border-color: $theme-quaternary;
+    background-color: $theme-quaternary;
+  }
+}
+
+.btn {
+  border-radius: 20px;
+  @include alt-font;
+}
+
+.btn-xl {
+  font-size: 14px;
+  padding: 10px;
+}
+
+@include media-breakpoint-up(lg) {
+  .btn-xl {
+    padding: 8px;
+  }
+}
