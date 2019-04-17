@@ -19,17 +19,15 @@ http
     return {
       get: () =>
         Promise.resolve({
-          data: {
-            feeds: [
-              {
-                id: 1,
-                name: "test",
-                url: "url test",
-                basUrl: "base url",
-                description: "description test"
-              }
-            ]
-          }
+          data: [
+            {
+              id: 1,
+              name: "test",
+              url: "url test",
+              basUrl: "base url",
+              description: "description test"
+            }
+          ]
         })
     };
   });
@@ -84,8 +82,20 @@ describe("Feed Action", () => {
           payload: { list: "" }
         },
         {
-          type: types.SET_ERRORS,
-          payload: { list: "error thrown" }
+          type: types.SET_FEEDS,
+          payload: {
+            feeds: [
+              {
+                id: 1,
+                name: "test",
+                url: "url test",
+                basUrl: "base url",
+                description: "description test",
+                isError: false
+              }
+            ],
+            hasMore: false
+          }
         },
         {
           type: types.IS_LOADING,

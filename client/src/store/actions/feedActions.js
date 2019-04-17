@@ -68,9 +68,6 @@ export const getFeeds = () => dispatch => {
 
       // Storing feeds in store
       addFeeds(mappedFeeds, hasMore);
-
-      // Setting the feed isLoading flag to false
-      setLoading(false);
     })
     .catch(err => {
       // Setting error to store
