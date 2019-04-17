@@ -28,8 +28,9 @@ $ npm test
 
 ## TIPS
 
-If you want to see the lazy loading of the feeds in a slower transition, go to **Developer Tools** (Chrome) and select the option **Slow 3G** in the Network tab.
+> If you want to see the lazy loading of the feeds in a slower transition, go to **Developer Tools** (Chrome) and select the option **Slow 3G** in the Network tab.
 
+> Here's a list rss feeds to select from [https://www.uen.org/feeds/lists.shtml](https://www.uen.org/feeds/lists.shtml)
 
 ## Author
 
