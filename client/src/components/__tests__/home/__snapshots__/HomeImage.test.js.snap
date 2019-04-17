@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<HomeImage /> renders correctly. 1`] = `
+exports[`<HomeImage /> should render correctly. 1`] = `
 <div
   className="col-lg-5 my-auto"
 >

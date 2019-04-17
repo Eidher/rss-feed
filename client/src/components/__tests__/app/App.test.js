@@ -10,16 +10,13 @@ describe("<App />", () => {
   const wrapper = shallow(<App />);
 
   it("contains the right components", () => {
+    expect(wrapper).toContainExactlyOneMatchingElement("BrowserRouter");
     expect(wrapper).toContainReact(<Header />);
     expect(wrapper).toContainReact(<Content />);
     expect(wrapper).toContainReact(<Footer />);
   });
 
-  it("has className called App", () => {
-    expect(wrapper).toHaveClassName("App");
-  });
-
-  it("has 1 div as a parent node", () => {
-    expect(wrapper.find("div")).toHaveLength(1);
+  it("has one parent div with className .App", () => {
+    expect(wrapper).toContainMatchingElements(1, ".App");
   });
 });

@@ -8,16 +8,16 @@ exports[`<Header /> renders correctly 1`] = `
   <div
     className="container"
   >
-    <a
-      className="navbar-brand js-scroll-trigger"
-      href="#page-top"
+    <Link
+      className="navbar-brand"
+      to="/"
     >
       <img
         alt="Univision Logo"
         className="logo img-fluid"
       />
        / RSS Feed
-    </a>
+    </Link>
     <button
       aria-controls="navbarResponsive"
       aria-expanded="false"
@@ -42,32 +42,32 @@ exports[`<Header /> renders correctly 1`] = `
         <li
           className="nav-item"
         >
-          <a
-            className="nav-link js-scroll-trigger"
-            href="#download"
+          <Link
+            className="nav-link js-navbar-trigger"
+            to="/"
           >
             Home
-          </a>
+          </Link>
         </li>
         <li
           className="nav-item"
         >
-          <a
-            className="nav-link js-scroll-trigger"
-            href="#features"
+          <Link
+            className="nav-link js-navbar-trigger"
+            to="/feed"
           >
             RSS Feed
-          </a>
+          </Link>
         </li>
         <li
           className="nav-item"
         >
-          <a
-            className="nav-link js-scroll-trigger"
-            href="#contact"
+          <Link
+            className="nav-link js-navbar-trigger"
+            to="/contact"
           >
             Contact
-          </a>
+          </Link>
         </li>
       </ul>
     </div>

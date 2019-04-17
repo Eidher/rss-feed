@@ -1,7 +1,9 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`<Footer /> renders correctly. 1`] = `
-<footer>
+<footer
+  className="w-100"
+>
   <div
     className="container"
   >
@@ -16,29 +18,29 @@ exports[`<Footer /> renders correctly. 1`] = `
       <li
         className="list-inline-item"
       >
-        <a
-          href="#"
+        <Link
+          to="/"
         >
           Home
-        </a>
+        </Link>
       </li>
       <li
         className="list-inline-item"
       >
-        <a
-          href="#"
+        <Link
+          to="/feed"
         >
           RSS Feed
-        </a>
+        </Link>
       </li>
       <li
         className="list-inline-item"
       >
-        <a
-          href="#"
+        <Link
+          to="/contact"
         >
           Contact
-        </a>
+        </Link>
       </li>
     </ul>
   </div>

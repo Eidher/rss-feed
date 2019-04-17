@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Content /> should render correctly. 1`] = `
+<main>
+  <div
+    className="container h-100"
+  >
+    <Route
+      component={[Function]}
+    />
+    <Route
+      component={[Function]}
+      exact={true}
+      path="/"
+    />
+    <Route
+      component={[Function]}
+      path="/feed"
+    />
+    <Route
+      component={[Function]}
+      path="/contact"
+    />
+  </div>
+</main>
+`;

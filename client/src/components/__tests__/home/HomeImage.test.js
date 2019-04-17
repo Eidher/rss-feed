@@ -6,11 +6,11 @@ describe("<HomeImage />", () => {
   const props = { image: "path-to-image" };
   const wrapper = shallow(<HomeImage {...props} />);
 
-  it("renders correctly.", () => {
+  it("should render correctly.", () => {
     expect(wrapper).toMatchSnapshot();
   });
 
-  it("has the right propos ", () => {
+  it("should receive the right props ", () => {
     expect(wrapper.find("img")).toHaveProp("src");
     expect(wrapper.find("img").prop("src")).toBe(props.image);
   });
